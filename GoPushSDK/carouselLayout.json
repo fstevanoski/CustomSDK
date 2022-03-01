@@ -1,0 +1,88 @@
+{
+  "type": "carousel",
+  "closeButton": {
+    "show": true,
+    "icon": null,
+    "height": 10,
+    "width": 10
+
+  },
+  "triggers":  [
+    [
+      {
+        "type": "inApp",
+        "key": "Some Key",
+        "operator": "is or not or greater or less or equal",
+        "value": "Some Value"
+      },
+      {
+        "type": "sessionDuration",
+        "operator": "is or not or greater or less or equal",
+        "value": 25
+      }
+    ],
+    [
+      {
+        "type": "durationSinceLastInApp",
+        "operator": "is or not or greater or less or equal",
+        "value": 25
+      },
+      {
+        "type": "onAppOpen"
+      }
+    ]
+  ],
+  "blocks": [
+      {
+        "text": "This Is A Carousel Layout Of In-App Message PopUp View",
+        "type": "text",
+        "format" : {
+          "font": "System Font (Default)",
+          "size": 32,
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "alignment": "left or right or center",
+        "margin": {
+          "top": null,
+          "right": 5,
+          "left": null,
+          "bottom": 50
+
+        }
+      },
+      {
+        "type": "image",
+        "src": "https://snacknation.com/wp-content/uploads/2020/07/hero-option-2.png",
+        "actions": {
+          "url": "https://www.youtube.com",
+          "locationPermissionPrompt": false
+        }
+      },
+      {
+        "type": "image",
+        "src": "https://snacknation.com/wp-content/uploads/2020/07/hero-option-2.png",
+        "actions": {
+          "url": "https://www.youtube.com",
+          "locationPermissionPrompt": false
+        }
+      },
+      {
+        "type": "button",
+        "text": "Tap Here!",
+        "background": "#1F8FEB",
+        "format" : {
+          "font": "System Font (Default)",
+          "size": 18,
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        "actions": {
+          "url": "https://www.google.com",
+          "locationPermissionPrompt": false
+        }
+      }
+  ]
+}

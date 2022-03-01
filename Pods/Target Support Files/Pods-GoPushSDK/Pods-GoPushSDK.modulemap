@@ -1,0 +1,6 @@
+framework module Pods_GoPushSDK {
+  umbrella header "Pods-GoPushSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

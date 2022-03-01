@@ -1,0 +1,6 @@
+framework module Pods_GoPushNotificationContentExtension {
+  umbrella header "Pods-GoPushNotificationContentExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

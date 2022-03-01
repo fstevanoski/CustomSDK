@@ -1,0 +1,79 @@
+{
+  "type": "top or center or bottom or full",
+  "closeButton": {
+    "show": true,
+    "icon": null,
+    "height": 10,
+    "width": 10
+    
+  },
+  "triggers":  [
+    [
+      {
+        "type": "inApp",
+        "key": "Some Key",
+        "operator": "is or not or greater or less or equal",
+        "value": "Some Value"
+      },
+      {
+        "type": "sessionDuration",
+        "operator": "is or not or greater or less or equal",
+        "value": 25
+      }
+    ],
+    [
+      {
+        "type": "durationSinceLastInApp",
+        "operator": "is or not or greater or less or equal",
+        "value": 25
+      },
+      {
+        "type": "onAppOpen"
+      }
+    ]
+  ],
+  "blocks": [
+      {
+        "type": "text", 
+        "format" : { 
+          "font": "System Font (Default)",
+          "size": 32,
+          "bold": true,
+          "italic": false,
+          "underline": true
+        },
+        "alignment": "left or right or center",
+        "margin": {
+          "top": null,
+          "right": 5, 
+          "left": null,
+          "bottom": 50 
+          
+        }
+      },
+      {
+        "type": "image", 
+        "src": "image_url.com/image.png",
+        "actions": {
+          "url": null, 
+          "locationPermissionPrompt": false 
+        }
+      },
+      {
+        "type": "button", 
+        "text": "My Button Text",
+        "background": "#1F8FEB",
+        "format" : { 
+          "font": "System Font (Default)",
+          "size": 18,
+          "bold": true,
+          "italic": false,
+          "underline": true
+        },
+        "actions": {
+          "url": null, 
+          "locationPermissionPrompt": false 
+        }
+      }
+  ]
+}

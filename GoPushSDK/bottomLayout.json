@@ -1,0 +1,56 @@
+{
+  "type": "bottom",
+  "closeButton": {
+    "show": true,
+    "icon": null,
+    "height": 10,
+    "width": 10
+    
+  },
+  "triggers":  [
+    [
+      {
+        "type": "inApp",
+        "key": "Some Key",
+        "operator": "is or not or greater or less or equal",
+        "value": "Some Value"
+      },
+      {
+        "type": "sessionDuration",
+        "operator": "is or not or greater or less or equal",
+        "value": 25
+      }
+    ],
+    [
+      {
+        "type": "durationSinceLastInApp",
+        "operator": "is or not or greater or less or equal",
+        "value": 25
+      },
+      {
+        "type": "onAppOpen"
+      }
+    ]
+  ],
+  "blocks": [
+      {
+        "text": "This Is A Bottom Layout Of In-App Message PopUp View",
+        "type": "text", 
+        "format" : { 
+          "font": "System Font (Default)",
+          "size": 22,
+          "bold": true,
+          "italic": true,
+          "underline": false
+        },
+        "alignment": "left or right or center",
+        "margin": {
+          "top": null,
+          "right": 5, 
+          "left": null,
+          "bottom": 50 
+          
+        }
+      }
+  ]
+}
